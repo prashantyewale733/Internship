@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Prash Studio</title>
+  <style>
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: khaki;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .section {
+      margin: 60px auto;
+      max-width: 800px;
+      text-align: justify;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      height: 450px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .slideshow-container img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      opacity: 0;
+      animation: fade 35s infinite;
+    }
+
+    .slideshow-container img:nth-child(1) { animation-delay: 0s; }
+    .slideshow-container img:nth-child(2) { animation-delay: 7s; }
+    .slideshow-container img:nth-child(3) { animation-delay: 14s; }
+    .slideshow-container img:nth-child(4) { animation-delay: 21s; }
+    .slideshow-container img:nth-child(5) { animation-delay: 28s; }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      4% { opacity: 1; }
+      20% { opacity: 1; }
+      24% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .section h2 {
+      margin-top: 20px;
+      font-size: 1.8em;
+      color: #444;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+    .contact-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">The Prash Studio</div>
+    <nav>
+      <ul>
+        <li><a href="prash_studio.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="enquire.html">Inquire Now</a></li>
+        <li><a href="testmonial.html">Testmonial</a></li>
+        <li><a href="packages.html">Packages</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sections with Slideshow -->
+   <a href="pre_wedding.html">
+  <div class="section">
+    <div class="slideshow-container">
+      <img src="pre_weddi 5.jpg" alt="Pre-Wedding 1">
+      <img src="pre_weddi 2.jpg" alt="Pre-Wedding 2">
+      <img src="pre_weddi 3.jpg" alt="Pre-Wedding 3">
+      <img src="pre_weddi 4.jpg" alt="Pre-Wedding 4">
+      <img src="pre_weddi.jpg" alt="Pre-Wedding 5">
+    </div></a>
+   <center> <h2>Pre-Wedding</h2></center>
+  </div>
+
+  <a href="wedding.html">
+  <div class="section">
+    <div class="slideshow-container">
+      <img src="weddi.jpg" alt="Wedding 1">
+      <img src="weddi 2.jpg" alt="Wedding 2">
+      <img src="weddi 3.jpg" alt="Wedding 3">
+      <img src="weddi 4.jpg" alt="Wedding 4">
+      <img src="weddi 5.jpg" alt="Wedding 5">
+    </div></a>
+    <center><h2>Wedding</h2></center>
+  </div>
+
+  <a href="maternity.html">
+  <div class="section">
+    <div class="slideshow-container">
+      <img src="maternity 1.jpg" alt="Maternity 1">
+      <img src="maternity 2 .jpg" alt="Maternity 2">
+      <img src="maternity 3.jpg" alt="Maternity 3">
+      <img src="maternity 4.jpg" alt="Maternity 4">
+      <img src="maternity 5.jpg" alt="Maternity 5">
+    </div></a>
+    <center><h2>Maternity</h2></center>
+  </div>
+
+  <a href="newborn.html">
+  <div class="section">
+    <div class="slideshow-container">
+      <img src="newborn 1.jpg" alt="New Born 1">
+      <img src="newborn 2.jpg" alt="New Born 2">
+      <img src="newborn 3.jpg" alt="New Born 3">
+      <img src="newborn 4.jpg" alt="New Born 4">
+      <img src="newborn 5.jpg" alt="New Born 5">
+    </div></a>
+    <center><h2>New Born</h2></center>
+  </div>
+
+  <a href="birthday.html">
+    <div class="section">
+      <div class="slideshow-container">
+        <img src="birthday 1 .jpg" alt="Birthday 1">
+        <img src="birthday 2.jpg" alt="Birthday 2">
+        <img src="birthday 3.jpg" alt="Birthday 3">
+        <img src="birthday 4.jpg" alt="Birthday 4">
+        <img src="birthday 1a.jpg" alt="Birthday 5">
+      </div>
+  </a>
+    <center><h2>Birthday</h2></center>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 The Prash Studio. All rights reserved.
+  </footer>
+
+</body>
+</html>
