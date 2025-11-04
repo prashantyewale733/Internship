@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday - The Prash Studio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      width: calc(50% - 20px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .gallery-item h3 {
+      padding: 15px;
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">The Prash Studio</div>
+    <nav>
+      <ul>
+        <li><a href="prash_studio.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="enquire.html">Inquire Now</a></li>
+        <li><a href="testmonial.html">Testimonial</a></li>
+        <li><a href="packages.html">Packages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Birthday Gallery -->
+  <div class="gallery-container">
+
+    <div class="gallery-item">
+      <img src="birthday 1 .jpg" alt="Birthday Celebration 1">
+      <h3>First Birthday Bash</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday2.jpg" alt="Birthday Celebration 2">
+      <h3>Cake Smash Fun</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday3.jpg" alt="Birthday Celebration 3">
+      <h3>Decor & Candles</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday4.jpg" alt="Birthday Celebration 4">
+      <h3>Happy Moments</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday5.jpg" alt="Birthday Celebration 5">
+      <h3>Party Lights</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday6.jpg" alt="Birthday Celebration 6">
+      <h3>Candid Clicks</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday7.jpg" alt="Birthday Celebration 7">
+      <h3>Family Celebration</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="birthday8.jpg" alt="Birthday Celebration 8">
+      <h3>Fun & Games</h3>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 The Prash Studio. All rights reserved.
+  </footer>
+
+</body>
+</html>

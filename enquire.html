@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inquire Now | The Prash Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">The Prash Studio</div>
+    <nav>
+      <ul>
+        <li><a href="prash_studio.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="inquire.html">Inquire Now</a></li>
+        <li><a href="testmonial.html">Testmonial</a></li>
+        <li><a href="packages.html">Packages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inquiry Section -->
+  <section class="contact-section">
+    <h1>Inquire Now</h1>
+    <p style="text-align:center; max-width:700px; margin: 0 auto 30px;">
+      We'd love to hear from you! Fill out the form below to inquire about our photography packages, availability, or special requests.
+    </p>
+
+    <div class="contact-form">
+      <form id="inquiryForm" action="mailto:info@theprashstudio.com" method="post" enctype="text/plain">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="event-type">Type of Shoot</label>
+        <select id="event-type" name="event-type" required>
+          <option value="">-- Select --</option>
+          <option value="Pre-Wedding">Pre-Wedding</option>
+          <option value="Wedding">Wedding</option>
+          <option value="Maternity">Maternity</option>
+          <option value="New Born">New Born</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your event or any special requests."></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 The Prash Studio. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("inquiryForm");
+
+      form.addEventListener("submit", function (e) {
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const phone = form.phone.value.trim();
+        const eventType = form["event-type"].value;
+        const date = form.date.value;
+
+        // Basic empty check
+        if (!name || !email || !phone || !eventType || !date) {
+          alert("Please fill out all required fields.");
+          e.preventDefault();
+          return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          e.preventDefault();
+          return;
+        }
+
+        // Phone number validation (basic pattern, adjust as needed)
+        const phonePattern = /^[6-9]\d{9}$/;
+        if (!phonePattern.test(phone)) {
+          alert("Please enter a valid 10-digit Indian phone number.");
+          e.preventDefault();
+          return;
+        }
+
+        // Confirm before submit
+        const confirmSubmit = confirm("Do you want to submit this inquiry?");
+        if (!confirmSubmit) {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
